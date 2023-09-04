@@ -5,3 +5,39 @@
 button>svg {
   margin-right: 5px;
 }
+
+
+.bug-choose-field {
+  border: 1px solid rgb(117, 221, 255);
+  border-radius: 7px;
+  padding: 4px;
+  box-shadow: 3px 3px 3px rgb(189, 191, 189);
+  color: rgb(28, 219, 78);
+  outline: none;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.bug-name-list {
+  border: 1px solid rgb(117, 221, 255);
+  border-radius: 7px;
+  padding: 4px;
+  box-shadow: 3px 3px 3px rgb(189, 191, 189);
+  z-index: 1;
+  position: relative;
+  margin: 10px 0;
+  overflow-y: auto;
+  max-height: 260px;
+}
+
+
+.bug-name-field {
+  color: rgb(28, 219, 78);
+  padding: 4px;
+}
+
+.all {
+  display: block;
+  max-width: 200px;
+}

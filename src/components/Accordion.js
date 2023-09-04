@@ -23,7 +23,7 @@ function Accordion({ items }) {
 
     return (
       <div key={item.id}>
-        <div className="flex justify-between p-3 bg-gray-50 border-b items-center cursor-pointer"
+        <div className="flex justify-between p-3 bg-gray-50 border-b items-center cursor-pointer hover:bg-blue-200"
           onClick={() => handleClick(index)}>
           {item.label}
           {icon}
