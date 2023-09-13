@@ -8,11 +8,11 @@ import TablePage from "./pages/TablePage";
 import CounterPage from "./pages/CounterPage";
 import AutocompletePage from "./pages/AutocompletePage";
 import LandingPage from "./pages/LandingPage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return <div>
     <LandingPage />
-    {/* <div className="container mx-auto grid grid-cols-6 gap-4 mt-4"> */}
     <div className="sidebar-container container mx-auto">
       <Sidebar />
       <div className="sidebar-content">
@@ -38,6 +38,9 @@ function App() {
           <AutocompletePage />
         </Route>
       </div>
+    </div>
+    <div>
+      <AboutPage />
     </div>
   </div>
 }

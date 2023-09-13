@@ -6,6 +6,9 @@ button>svg {
   margin-right: 5px;
 }
 
+html * {
+  font-family: 'Trebuchet MS', 'Arial, sans-serif';
+}
 
 .bug-choose-field {
   border: 1px solid rgb(117, 221, 255);
@@ -45,8 +48,6 @@ button>svg {
 .landing-page-div {
   display: flex;
   justify-content: center;
-
-
   flex-wrap: wrap;
 }
 
@@ -61,9 +62,24 @@ button>svg {
   overflow: auto;
   background-color: rgb(253 242 248);
   color: rgb(88 28 135);
-
   max-width: 200px;
   min-height: 200px;
+}
+
+.lp-h2 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.lp-content {
+  font-size: 17px;
+  text-align: center;
+}
+
+.lp-icon {
+  width: 100%;
+  display: inline;
+  height: 30px;
 }
 
 .sidebar-container {
@@ -80,4 +96,19 @@ button>svg {
 
 .sidebar-content {
   flex-grow: 1
+}
+
+.about-page-div {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.about-page-content {
+  text-align: center;
+  max-width: 750px;
+  font-size: 14px;
+  color: rgb(146, 146, 146);
 }

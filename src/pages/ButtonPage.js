@@ -8,7 +8,7 @@ function ButtonPage() {
       <div>
         <Button primary rounded>
           <BiWinkTongue />
-          yess girl slay
+          add to cart!
         </Button>
       </div>
       <div>
@@ -26,13 +26,13 @@ function ButtonPage() {
       <div>
         <Button warning rounded>
           <BiDizzy />
-          OMG! care..
+          danger!
         </Button>
       </div>
       <div>
         <Button danger outline rounded>
           <BiUpsideDown />
-          nooooo ._.
+          error!
         </Button>
       </div>
     </div>
