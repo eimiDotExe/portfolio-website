@@ -7,45 +7,44 @@ import ModalPage from "./pages/ModalPage";
 import TablePage from "./pages/TablePage";
 import CounterPage from "./pages/CounterPage";
 import AutocompletePage from "./pages/AutocompletePage";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
-  return <div className="container mx-auto grid grid-cols-6 gap-4 mt-4">
-    <Sidebar />
-    <div className="col-span-5">
-
-      <Route path="/">
-        <DropdownPage />
-      </Route>
-
-      <Route path="/accordion">
-        <AccordionPage />
-      </Route>
-
-      <Route path="/buttons">
-        <ButtonPage />
-      </Route>
-
-      <Route path="/modal">
-        <ModalPage />
-      </Route>
-
-      <Route path="/table">
-        <TablePage />
-      </Route>
-
-      <Route path="/counter">
-        <CounterPage initialCount={10} />
-      </Route>
-
-      <Route path="/autocomplete">
-        <AutocompletePage />
-      </Route>
+  return <div>
+    <LandingPage />
+    {/* <div className="container mx-auto grid grid-cols-6 gap-4 mt-4"> */}
+    <div className="sidebar-container container mx-auto">
+      <Sidebar />
+      <div className="sidebar-content">
+        <Route path="/dropdown">
+          <DropdownPage />
+        </Route>
+        <Route path="/accordion">
+          <AccordionPage />
+        </Route>
+        <Route path="/buttons">
+          <ButtonPage />
+        </Route>
+        <Route path="/modal">
+          <ModalPage />
+        </Route>
+        <Route path="/table">
+          <TablePage />
+        </Route>
+        <Route path="/counter">
+          <CounterPage initialCount={10} />
+        </Route>
+        <Route path="/autocomplete">
+          <AutocompletePage />
+        </Route>
+      </div>
     </div>
   </div>
 }
 
 document.addEventListener('mousedown', function (event) {
-  if (event.detail > 1) {
+  const isInput = event.target instanceof HTMLInputElement
+  if (event.detail > 1 && !isInput) {
     event.preventDefault();
   }
 }, false);

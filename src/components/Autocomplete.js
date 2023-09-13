@@ -29,7 +29,7 @@ function Autocomplete({ bugPokemon, onChangeVal }) {
 
   return <div>
     <div onClick={onClose} className={focused ? "fixed inset-0" : ""}> </div>
-    <div className="all">
+    <div className="bug-all">
       <div>
         <input className="bug-choose-field"
           type="text"

@@ -2,7 +2,7 @@ import Link from "./Link";
 
 function Sidebar() {
   const links = [
-    { label: 'Dropdown', path: '/' },
+    { label: 'Dropdown', path: '/dropdown' },
     { label: 'Accordion', path: '/accordion' },
     { label: 'Buttons', path: '/buttons' },
     { label: 'Modal', path: '/modal' },
@@ -23,10 +23,12 @@ function Sidebar() {
   });
 
   return (
-    <div className="sticky top-0 flex flex-col items-start">
+    <div className="sidebar">
       {renderedLinks}
     </div>
   );
 }
+
+//ask hanna how to get the sidebar to stop getting overlapped
 
 export default Sidebar;

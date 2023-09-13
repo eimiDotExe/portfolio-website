@@ -37,7 +37,47 @@ button>svg {
   padding: 4px;
 }
 
-.all {
+.bug-all {
   display: block;
   max-width: 200px;
+}
+
+.landing-page-div {
+  display: flex;
+  justify-content: center;
+
+
+  flex-wrap: wrap;
+}
+
+.landing-page-textarea {
+  border: 2px solid rgb(213, 242, 245);
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px rgb(189, 191, 189);
+  /* aspect-ratio: 1 / 1; */
+  /* width: 20%; */
+  padding: 4px;
+  margin: 10px;
+  overflow: auto;
+  background-color: rgb(253 242 248);
+  color: rgb(88 28 135);
+
+  max-width: 200px;
+  min-height: 200px;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  display: flex;
+  min-width: 170px;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.sidebar-content {
+  flex-grow: 1
 }

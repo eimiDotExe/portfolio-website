@@ -10,7 +10,6 @@ function Accordion({ items }) {
     } else {
       setExpandedIndex(nextIndex);
     }
-
   };
 
   const renderedItems = items.map((item, index) => {
@@ -23,7 +22,7 @@ function Accordion({ items }) {
 
     return (
       <div key={item.id}>
-        <div className="flex justify-between p-3 bg-gray-50 border-b items-center cursor-pointer hover:bg-blue-200"
+        <div className="flex justify-between p-3 shadow-md bg-gray-50 border-b items-center cursor-pointer hover:bg-blue-200"
           onClick={() => handleClick(index)}>
           {item.label}
           {icon}
