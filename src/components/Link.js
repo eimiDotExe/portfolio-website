@@ -5,7 +5,6 @@ function Link({ to, children, className, activeClassName }) {
   const { navigate, currentPath } = useNavigation();
 
   const classes = classNames(
-    'text-fuchsia-300',
     className,
     currentPath === to && activeClassName
   );
@@ -20,7 +19,7 @@ function Link({ to, children, className, activeClassName }) {
   };
 
 
-  return <a className={classes} href={to} onClick={handleClick}>{children}</a>
+  return <div className="sidebar-link"> <a className={classes} href={to} onClick={handleClick}>{children}</a> </div>
 }
 
 export default Link;

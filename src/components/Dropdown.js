@@ -36,7 +36,7 @@ function Dropdown({ options, value, onChange }) {
 
   const renderedOptions = options.map((option) => {
     return (
-      <div className="hover:bg-sky-100 rouded cursor-pointer p-1"
+      <div className="hover:bg-sky-100 cursor-pointer p-1"
         onClick={() => handleOptionClick(option)}
         key={option.value}>
         {option.label}
@@ -45,19 +45,19 @@ function Dropdown({ options, value, onChange }) {
   });
 
 
-  return <div ref={divEl} className="w-48 relative">
-    <Panel
-      className="flex justify-between items-center cursor-pointer"
+  return <div ref={divEl} className="relative">
+    <div
+      className="flex justify-between items-center cursor-pointer panel-div"
       onClick={handleClick}
     >
       {value?.label || 'Select...'}
       <GoChevronDown className="text-lg" />
-    </Panel>
+    </div>
 
     {isOpen && (
-      <Panel className="absolute top-full">
+      <div className="absolute top-full panel-div">
         {renderedOptions}
-      </Panel>
+      </div>
     )}
   </div>
 };

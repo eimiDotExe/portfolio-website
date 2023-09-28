@@ -33,7 +33,7 @@ function Autocomplete({ bugPokemon, onChangeVal }) {
       <div>
         <input className="bug-choose-field"
           type="text"
-          placeholder="Choose a Bug"
+          placeholder="Type a bug"
           value={val}
           onFocus={handleFocus}
           onChange={handleChange} />

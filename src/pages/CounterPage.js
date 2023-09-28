@@ -85,7 +85,7 @@ function CounterPage({ initialCount }) {
         value={state.valueToAdd || ""}
         onChange={handleChange}
         type="number"
-        className='p-1 m-3 bg/gray/50 border border-gray-300'
+        className='p-1 m-3 bg/gray/50 border border-gray-300 min-w-fit'
       />
       <Button secondary rounded>Add it!</Button>
     </form>

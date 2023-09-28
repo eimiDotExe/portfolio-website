@@ -9,11 +9,17 @@ import CounterPage from "./pages/CounterPage";
 import AutocompletePage from "./pages/AutocompletePage";
 import LandingPage from "./pages/LandingPage";
 import AboutPage from "./pages/AboutPage";
+import IntroPage from "./pages/IntroPage";
+import FooterPage from "./pages/FooterPage";
 
 function App() {
   return <div>
+    <div className="fill">
+      <IntroPage />
+    </div>
     <LandingPage />
-    <div className="sidebar-container container mx-auto">
+    <h2 className="sidebar-title">Check out some of my components!</h2>
+    <div className="sidebar-container">
       <Sidebar />
       <div className="sidebar-content">
         <Route path="/dropdown">
@@ -41,6 +47,9 @@ function App() {
     </div>
     <div>
       <AboutPage />
+    </div>
+    <div>
+      <FooterPage />
     </div>
   </div>
 }

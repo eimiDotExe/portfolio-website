@@ -22,17 +22,17 @@ function Accordion({ items }) {
 
     return (
       <div key={item.id}>
-        <div className="flex justify-between p-3 shadow-md bg-gray-50 border-b items-center cursor-pointer hover:bg-blue-200"
+        <div className="flex justify-between p-3 shadow-md bg-gray-50 border items-center cursor-pointer hover:bg-blue-200 max-w-lg"
           onClick={() => handleClick(index)}>
           {item.label}
           {icon}
         </div>
-        {isExpanded && <div className="border-5 p-5">{item.content}</div>}
+        {isExpanded && <div className="p-5">{item.content}</div>}
       </div>
     );
   });
 
-  return <div className="border-x border-t rounded">
+  return <div className="border rounded max-w-lg">
     {renderedItems}
   </div>;
 }

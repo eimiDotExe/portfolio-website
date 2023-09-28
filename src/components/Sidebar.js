@@ -15,8 +15,8 @@ function Sidebar() {
       <Link
         key={link.label}
         to={link.path}
-        className="mb-3"
-        activeClassName="font-bold border-l-4 border-violet-400 pl-2">
+        className="mb-3 blue-text"
+        activeClassName="font-bold border-l-4 pl-2 border-pink">
         {link.label}
       </Link>
     );
@@ -29,6 +29,5 @@ function Sidebar() {
   );
 }
 
-//ask hanna how to get the sidebar to stop getting overlapped
 
 export default Sidebar;

@@ -6,16 +6,17 @@ button>svg {
   margin-right: 5px;
 }
 
-html * {
-  font-family: 'Trebuchet MS', 'Arial, sans-serif';
+body {
+  color: #212121;
+  font-family: monospace;
 }
 
+
 .bug-choose-field {
-  border: 1px solid rgb(117, 221, 255);
   border-radius: 7px;
   padding: 4px;
-  box-shadow: 3px 3px 3px rgb(189, 191, 189);
-  color: rgb(28, 219, 78);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.15);
+  color: #fcbea9;
   outline: none;
   width: 100%;
   z-index: 1;
@@ -23,20 +24,21 @@ html * {
 }
 
 .bug-name-list {
-  border: 1px solid rgb(117, 221, 255);
+  color: #fcbea9;
   border-radius: 7px;
   padding: 4px;
-  box-shadow: 3px 3px 3px rgb(189, 191, 189);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.15);
   z-index: 1;
   position: relative;
   margin: 10px 0;
   overflow-y: auto;
   max-height: 260px;
+  cursor: pointer;
 }
 
 
 .bug-name-field {
-  color: rgb(28, 219, 78);
+  color: #fcbea9;
   padding: 4px;
 }
 
@@ -46,24 +48,20 @@ html * {
 }
 
 .landing-page-div {
+  margin: 130px auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 900px;
 }
 
 .landing-page-textarea {
-  border: 2px solid rgb(213, 242, 245);
   border-radius: 7px;
-  box-shadow: 3px 3px 3px rgb(189, 191, 189);
-  /* aspect-ratio: 1 / 1; */
-  /* width: 20%; */
-  padding: 4px;
-  margin: 10px;
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.06);
+  padding: 15px;
   overflow: auto;
-  background-color: rgb(253 242 248);
-  color: rgb(88 28 135);
-  max-width: 200px;
-  min-height: 200px;
+  max-width: 280px;
+  min-height: 240px;
 }
 
 .lp-h2 {
@@ -72,34 +70,68 @@ html * {
 }
 
 .lp-content {
-  font-size: 17px;
+  margin-top: 4px;
+  font-size: 13px;
+  color: rgb(146, 146, 146);
   text-align: center;
 }
 
 .lp-icon {
   width: 100%;
+  color: #ffafb0;
   display: inline;
-  height: 30px;
+  height: 45px;
+  margin: 15px 0px;
 }
 
 .sidebar-container {
   display: flex;
   flex-wrap: wrap;
+  margin: 10px auto;
+  max-width: 1200px;
 }
 
 .sidebar {
   display: flex;
   min-width: 170px;
   flex-direction: column;
-  margin-left: 16px;
 }
 
 .sidebar-content {
   flex-grow: 1
 }
 
+.sidebar-link {
+  margin: 4px;
+}
+
+.sidebar-title {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 4px;
+  color: #212121;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.panel-div {
+  width: 170px;
+  border-radius: 4px;
+  box-shadow: 5px 6px 12px 5px rgba(0, 0, 0, 0.06);
+  padding: 3px;
+}
+
+.border-pink {
+  border-color: #fcbea9;
+}
+
+.blue-text {
+  color: #d5b1c5;
+}
+
 .about-page-div {
-  margin-top: 40px;
+  margin: 100px 0px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -111,4 +143,61 @@ html * {
   max-width: 750px;
   font-size: 14px;
   color: rgb(146, 146, 146);
+}
+
+.fill {
+  background-image: url('./images/mistyMountain.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+}
+
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 10%;
+  color: white;
+}
+
+.intro h1,
+.intro p {
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+.footer-page {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  height: 30px;
+  color: white;
+  font-size: 14px;
+  margin: 25px 0px 0px 0px;
+  background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+
+.blinking-cursor {
+  width: 8px;
+  height: 16px;
+  border: 2px solid white;
+  animation: flickerAnimation 1.5s infinite;
+  display: inline-block;
+  margin-bottom: -2px;
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
