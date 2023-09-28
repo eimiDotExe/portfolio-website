@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.f3db9352.css",
+    "main.js": "/portfolio-website/static/js/main.2e29bd6a.js",
+    "static/media/mistyMountain.jpg": "/portfolio-website/static/media/mistyMountain.e8bf0ab758602bc5c8c7.jpg",
+    "index.html": "/portfolio-website/index.html",
+    "main.f3db9352.css.map": "/portfolio-website/static/css/main.f3db9352.css.map",
+    "main.2e29bd6a.js.map": "/portfolio-website/static/js/main.2e29bd6a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3db9352.css",
+    "static/js/main.2e29bd6a.js"
+  ]
+}
